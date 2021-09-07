@@ -25,7 +25,11 @@ export class SafePipe implements PipeTransform {
 
 ## app.component.html
 
+Sử dụng pipe: `map | safe`
+
 `<iframe width="450" height="250" frameborder="0" style="border:0" [src]="map | safe" allowfullscreen></iframe>`
+
+Nếu không dùng pipe safe thì sẽ nhận thông báo lỗi như này![](C:\Users\admin\Downloads\unsafe.jpg)
 
 ## app.component.ts
 
