@@ -1,4 +1,4 @@
-# Angular nhúng Google Maps
+# Nhúng Google Maps vào dự án Angular
 
 Hướng dẫn nhúng Google Maps: https://developers.google.com/maps/documentation/embed/embedding-map
 
