@@ -4,7 +4,8 @@ Hướng dẫn nhúng Google Maps: https://developers.google.com/maps/documentat
 
 Lưu ý: Để nhúng được iframe thì tạo một Pipe đặt tên là `safe` như sau:
 
-`import {Pipe, PipeTransform} from '@angular/core';
+```
+import {Pipe, PipeTransform} from '@angular/core';
 import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 
 @Pipe({
@@ -20,7 +21,7 @@ export class SafePipe implements PipeTransform {
   }
 
 }
-`
+```
 
 ## app.component.html
 
@@ -28,7 +29,8 @@ export class SafePipe implements PipeTransform {
 
 ## app.component.ts
 
-`import {Component, OnInit} from '@angular/core';
+```
+import {Component, OnInit} from '@angular/core';
 import {environment} from '../environments/environment';
 import {Constant} from './constant.enum';
 
@@ -46,21 +48,25 @@ export class AppComponent implements OnInit {
       environment.GOOGLE_API_KEY + '&q=' + encodeURIComponent(address);
   }
 }
-`
+```
 
 ## environment.ts
 
-`export const environment = {
+```
+export const environment = {
   production: false,
   GOOGLE_API_KEY: 'AIzaSyC-wkWb2I9LZe1JHmkApDXX4wL1swMrsao',
-};`
+};
+```
 
 ## map-mode.enum.ts
 
-`export enum MapModeEnum {
+```
+export enum MapModeEnum {
   PLACE = 'place',
   VIEW = 'view',
   DIRECTIONS = 'directions',
   STREETVIEW = 'streetview',
   SEARCH = 'search'
-}`
+}
+```
